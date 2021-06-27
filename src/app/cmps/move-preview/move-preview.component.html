@@ -1,0 +1,17 @@
+<div class="move-preview">
+  <div *ngIf="contact && contact._id === move.toId">
+    <p>To: {{move?.to}}</p> 
+    <p>At: {{date}}</p>
+    <p>Amount: {{move?.amount}}</p>
+  </div>
+  <div *ngIf="!contact">
+    <p>To: {{move.to}}</p> 
+    <p>At: {{date}}</p>
+    <p>Amount: {{move.amount}}</p>
+  </div>
+  <!-- <ng-template #user>
+    <p>To: {{move.to}}</p> 
+    <p>At: {{date}}</p>
+    <p>Amount: {{move.amount}}</p>
+  </ng-template> -->
+</div>

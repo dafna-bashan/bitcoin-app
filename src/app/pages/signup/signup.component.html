@@ -1,0 +1,9 @@
+<div class="sign-up flex column align-center">
+    <h1>Signup</h1>
+    <form (ngSubmit)="onSignup()" class="flex column">
+        <!-- <input type="text" required minlength="2" name="username" placeholder="Username"> -->
+        <input type="text" [(ngModel)]="username" required minlength="2" #fullName="ngModel" required minlength="2" name="username" placeholder="Username">
+        <div class="errors" *ngIf="!fullName.valid && fullName.touched">Username is invalid</div> 
+        <button>Signup</button>
+    </form>
+</div>

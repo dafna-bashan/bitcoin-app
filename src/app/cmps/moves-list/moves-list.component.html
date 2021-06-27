@@ -1,0 +1,15 @@
+<div class="moves-list">
+    <h1>Your recent moves:</h1>
+       <div *ngIf="contact; else userMoves">
+        <move-preview *ngFor="let move of user.moves" [move]="move" [contact]="contact"></move-preview>
+    </div>
+    <ng-template #userMoves>
+        <move-preview *ngFor="let move of filteredUserMoves" [move]="move"></move-preview>
+    </ng-template>
+    <!-- <div *ngIf="contact; else userMoves">
+        <move-preview *ngFor="let move of contactMovesArr" [move]="move"></move-preview>
+    </div>
+    <ng-template #userMoves>
+        <move-preview *ngFor="let move of filteredUserMoves" [move]="move"></move-preview>
+    </ng-template> -->
+</div>

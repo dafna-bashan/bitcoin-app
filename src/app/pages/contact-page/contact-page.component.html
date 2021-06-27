@@ -1,0 +1,6 @@
+<div class="contact-page">
+    <contact-filter [filterBy]="filterBy" (onFilter)="onSetFilter($event)"></contact-filter>
+    <button [routerLink]="['/contact/add']">Add new contact</button>
+    <contact-list [contacts]="contacts$|async"></contact-list>
+    <router-outlet></router-outlet>
+</div>

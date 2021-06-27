@@ -1,0 +1,25 @@
+.header {
+    padding: 20px 0;
+    align-items: center;
+    gap: 20px;
+    .logo{
+        font-size: 40px;
+        cursor: pointer;
+    }
+    h1{
+        margin: 0;
+    }
+    button{
+        background: none;
+        border: none;
+    }
+    img{
+        width: 50px;
+    }
+    span{
+        cursor: pointer;
+    }
+    button{
+        cursor: pointer;
+    }
+}

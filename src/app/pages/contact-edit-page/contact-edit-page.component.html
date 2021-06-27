@@ -1,0 +1,21 @@
+<div class="contact-edit-screen">
+    <div class="contact-edit">
+        <form #form="ngForm" (ngSubmit)="onSaveContact()" class="flex column">
+            <input type="text" [(ngModel)]="contact.name" required minlength="2" #fullName="ngModel" name="name" placeholder="Name">
+            <div class="errors">
+                <div *ngIf="!fullName.valid && fullName.touched">Name is invalid</div>
+            </div>
+            <input type="text" [(ngModel)]="contact.email" required minlength="9" name="email" #email="ngModel" placeholder="Email">
+            <div class="errors">
+                <div class="errors" *ngIf="!email.valid && email.touched">Email is invalid</div>
+            </div>
+            <input type="text" [(ngModel)]="contact.phone" required minlength="15" name="phone" #phone="ngModel" placeholder="Phone">
+            <div class="errors">
+                <div class="errors" *ngIf="!phone.valid && phone.touched">Phone is invalid</div>
+            </div>
+            <button>Save</button>
+        </form>
+        <button (click)="onBack()">Back</button>
+    </div>
+</div>
+

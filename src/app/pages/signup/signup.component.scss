@@ -1,0 +1,19 @@
+.sign-up{
+    margin-top: 50px;
+    text-align: center;
+    h1{
+        font-size: 30px;
+    }
+    form{
+        width: 25%;
+        input{
+            padding: 7px;
+            margin-bottom: 10px;
+        }
+        button{
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.contact-edit-screen{
+width: 100vw;
+height: 100vh;
+background-color: rgba(65, 65, 65, 0.692);
+position: absolute;
+top: 0;
+left: 0;
+    .contact-edit{
+        padding: 30px;
+        position: absolute;
+        top: calc(100vh/ 3.5);
+        left: calc(100vw/ 2.5);
+        background-color: rgb(224, 224, 224);
+        border-radius: 10px;
+        box-shadow: 0 0 10px #565656;
+        input{
+            padding: 5px 25px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: none;
+            height: 35px;
+        }
+        button{
+            padding: 5px 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(134, 134, 134);
+            color: rgb(255, 255, 255);
+        }
+        .errors{
+            font-size: 12px;
+            height: 20px;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+<div class="transfer-fund">
+    <p>transfer coins to {{contact.name}}</p>
+    <form #form="ngForm" (ngSubmit)="onSetTransferCoins()">
+        <input type="number" [(ngModel)]="amount" required min="1" #transferAmount="ngModel" name="name" placeholder="Amount">
+        <!-- <div class="errors" *ngIf="!transferAmount.valid && transferAmount.touched">Amount is invalid</div> -->
+        <button>Transfer</button>
+    </form>
+</div>

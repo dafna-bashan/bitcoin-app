@@ -1,0 +1,4 @@
+<div class="contact-filter">
+  <label for="text">Filter by name, phone or email </label>
+  <input type="text" id="text" [(ngModel)]="filterByCopy.term" (ngModelChange)="onFilter.emit(filterByCopy)">
+</div>

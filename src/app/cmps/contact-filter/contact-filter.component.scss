@@ -1,0 +1,14 @@
+.contact-filter {
+    font-family  : roboto-light;
+    margin-bottom: 20px;
+
+    label {
+        margin-inline-end: 10px;
+    }
+
+    input {
+        padding      : 5px;
+        border       : .5px solid rgb(187, 187, 187);
+        border-radius: 5px;
+    }
+}

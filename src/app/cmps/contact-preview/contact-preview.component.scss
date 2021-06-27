@@ -1,0 +1,13 @@
+.contact-preview {
+    cursor: pointer;
+    text-align      : center;
+    background-color: rgb(235, 235, 235);
+    margin          : 5px;
+    padding         : 6px;
+    border-radius   : 5px;
+    font-family     : roboto-light;
+
+    img {
+        width: 115px;
+    }
+}
